@@ -1,0 +1,9 @@
+Time complexity:
+A amount of time runing the program and execution of program is called time complexity.
+Space complexity:
+A amount of memory , memeory is use to store program. Size of memory is called space ccomplexity.
+Represent Complexity:
+Mathematicals tools to represent time and space complexity.
+1: Big-O Notations (o-Notations) -worst case complexity.(v.vimp)
+2: Omega Notations:-Best case complexity.
+3: Theta Notations: Average case complexity.

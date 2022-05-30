@@ -1,0 +1,7 @@
+A algorithm is a set of well defined instructions to sove a particular problem.
+Example:
+A=10;
+B=20;
+S=A+B;
+S=30;
+one algotithms is solve in many different algorithms.
