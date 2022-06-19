@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="./first.js">  </script> -->
+    <!-- <script src="./Second.js"></script> -->
+    <!-- <script src="./Third.js"></script> -->
+    <!-- <script src="./Four.js"></script> -->
+      <!-- <script src="./nine.js"></script>  -->
+      <!-- <script src="./eight.js"></script>  -->
+     <!-- <script src="./Six.js"></script> -->
+          <!-- <script src="./Linear.js"></script> -->
+          <!-- <script src="./Firstfactorial.js"></script> -->
+          <!-- <script src="./formvalidations.js"></script> -->
+          <!-- <script src="./Reversestring.js"></script> -->
+          <!-- <script src="./Longestword.js"></script> -->
+          <script src="./Binarysearch.js"></script>
+      <p>Five program</p>
+    <button onclick="removeItem()">Remove Items</button>
+    <button onClick="updateValue()">update Value</button>
+    <button onClick="insertItem()">InsertItems</button>
+    <script>
+      //First task:write a program, we are not use splice method, ,the from arguments provides an integer
+      //Number, 0 or greater than zero, to be used first index to start changing the array value;.
+      //suppose;
+    
+      function updateValue() {
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var a = parseInt(prompt("Enter the number"));
+      var index = parseInt(prompt("Enter the index,which you want to change"));
+        if (index >= 0 && index <= arr.length) {
+          arr[index] = a;
+          console.log("Update array", arr);
+       return true;
+        } else {
+          console.log("invalid index");
+          return false;
+        }
+      }
+      //second task, Count the number of items in an array are remove;
+      var Count = 0;
+      var removeitemsadd=[];
+      function removeItem() {
+      var newarray = [];
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var b = parseInt(
+          prompt("Enter the number of items you want to remove")
+        );
+        if(arr.includes(b)){
+            Count++;
+            removeitemsadd.push(b);
+            for (var i = 0; i < arr.length-1; i++) {
+           if (arr[i]!== b) {
+             newarray.push(arr[i]);
+           } }
+           return true;
+        }
+          else{
+              alert("invaild number");
+              return false;
+          }
+          console.log("remove items array", newarray, "= Count", Count,"display all remove item",removeitemsadd);
+        }
+      //Third task, insert new items in array, at the specified index, without splice method;
+      function insertItem(){
+          var arr=[1,2,3,4,5,6,7,8,9,10];
+          var a=parseInt(prompt("Enter the insert number"));
+          arr.unshift(a);
+          console.log("Insert items array", arr);
+      }
+
+    </script>
+  </body>
+</html>
